@@ -23,15 +23,14 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  margin: 0;
 }
 
 nav ul li a {
   color: #ecf0f1;
   text-decoration: none;
   font-weight: bold;
-  padding: 1rem 1.5rem;
-  display: inline-block;
+  padding: 10px 15px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -41,7 +40,7 @@ nav ul li a:hover {
   color: #1abc9c;
 }
 
-/* Page Container */
+/* Main Container */
 .container {
   margin: 3rem auto;
   padding: 2rem;
@@ -51,9 +50,9 @@ nav ul li a:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  color: #34495e;
+  color: #4CAF50;
 }
 
 /* Table Styling */
@@ -81,6 +80,15 @@ td {
   text-align: center;
 }
 
+table tr:nth-child(even) {
+  background: #f4f4f9;
+}
+
+table tr:hover {
+  background: #e0f7e9;
+}
+
+/* Buttons */
 button.delete-btn {
   background-color: red;
   color: white;
@@ -97,11 +105,13 @@ button.delete-btn:hover {
 
 /* Footer */
 footer {
+  background-color: #4CAF50;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  background: #2c3e50;
-  color: #ecf0f1;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   font-size: 0.9rem;
 }
 
