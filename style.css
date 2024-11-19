@@ -23,14 +23,15 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0;
+  display: inline;
 }
 
 nav ul li a {
   color: #ecf0f1;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
+  display: inline-block;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -40,78 +41,73 @@ nav ul li a:hover {
   color: #1abc9c;
 }
 
-/* Main Container */
+/* Page Container */
 .container {
   margin: 3rem auto;
   padding: 2rem;
-  max-width: 900px;
+  max-width: 700px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
   text-align: center;
-  color: #4CAF50;
+  color: #34495e;
 }
 
-/* Table Styling */
-table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  background: #fdfdfd;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-table, th, td {
-  border: 1px solid #ddd;
+label {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-th {
-  background: #2c3e50;
-  color: white;
-  padding: 12px;
-  text-transform: uppercase;
-}
-
-td {
-  padding: 10px;
-  text-align: center;
-}
-
-table tr:nth-child(even) {
-  background: #f4f4f9;
-}
-
-table tr:hover {
-  background: #e0f7e9;
-}
-
-/* Buttons */
-button.delete-btn {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+input, select, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #bdc3c7;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-button.delete-btn:hover {
-  background-color: darkred;
+input:focus, select:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
 }
 
-/* Footer */
-footer {
-  background-color: #4CAF50;
+button {
+  background: #1abc9c;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #16a085;
+  transform: scale(1.02);
+}
+
+/* Hover Effect for Form Inputs */
+input:hover, select:hover {
+  border-color: #16a085;
+  box-shadow: 0 0 3px rgba(26, 188, 156, 0.3);
+}
+
+/* Footer (Optional) */
+footer {
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #2c3e50;
+  color: #ecf0f1;
   font-size: 0.9rem;
 }
 
