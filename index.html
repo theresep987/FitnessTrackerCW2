@@ -3,21 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Tracker - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="log-workout.html">Log Workout</a></li>
-      <li><a href="log-hydration.html">Log Hydration</a></li>
-      <li><a href="log-nutrition.html">Log Nutrition</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1>Welcome to the Fitness Tracker</h1>
-    <p>Track your fitness progress here. Visualizations coming soon!</p>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="log-workout.html">Log Workout</a></li>
+        <li><a href="log-hydration.html">Log Hydration</a></li>
+        <li><a href="log-nutrition.html">Log Nutrition</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Fitness Tracker - Workouts</h1>
+    <h2>Your Logged Workouts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Workout ID</th>
+          <th>User ID</th>
+          <th>Type</th>
+          <th>Duration</th>
+          <th>Calories Burned</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="workoutsTableBody">
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Fitness Tracker &copy; 2024. Built with Azure and Love.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
