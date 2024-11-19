@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Nutrition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="log-workout.html">Log Workout</a></li>
+      <li><a href="log-hydration.html">Log Hydration</a></li>
+      <li><a href="log-nutrition.html">Log Nutrition</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Log Nutrition</h1>
+    <form id="logNutritionForm">
+      <label for="calories">Calories:</label>
+      <input type="number" id="calories" name="calories" required>
+
+      <label for="proteins">Proteins (grams):</label>
+      <input type="number" id="proteins" name="proteins" required>
+
+      <label for="carbs">Carbs (grams):</label>
+      <input type="number" id="carbs" name="carbs" required>
+
+      <label for="fats">Fats (grams):</label>
+      <input type="number" id="fats" name="fats" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

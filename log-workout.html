@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Workout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="log-workout.html">Log Workout</a></li>
+      <li><a href="log-hydration.html">Log Hydration</a></li>
+      <li><a href="log-nutrition.html">Log Nutrition</a></li>
+    </ul>
+  </nav>
+
+  <!-- Form Section -->
+  <div class="container">
+    <h1>Log Workout</h1>
+    <form id="logWorkoutForm">
+      <label for="workoutType">Workout Type:</label>
+      <select id="workoutType" name="type" required>
+        <option value="Cardio">Cardio</option>
+        <option value="Strength">Strength</option>
+        <option value="Flexibility">Flexibility</option>
+      </select>
+
+      <label for="duration">Workout Duration (mins):</label>
+      <input type="number" id="duration" name="duration" required>
+
+      <label for="caloriesBurned">Calories Burned:</label>
+      <input type="number" id="caloriesBurned" name="caloriesBurned" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="evidence">Upload Evidence (Optional):</label>
+      <input type="file" id="evidence" name="evidence">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Fitness Tracker © 2024 | <a href="index.html">Home</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
